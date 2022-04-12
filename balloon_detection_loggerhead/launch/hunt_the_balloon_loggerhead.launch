@@ -1,0 +1,10 @@
+<launch>
+
+	<node pkg="balloon_detection_loggerhead" type="chase_the_balloon_loggerhead.py" name="chase_the_balloon_loggerhead" output="screen"> 
+	</node>
+
+	<node pkg="balloon_detection_loggerhead" type="find_balloon_loggerhead.py" name="find_balloon_loggerhead" output="screen">
+	</node>
+
+</launch>
+
