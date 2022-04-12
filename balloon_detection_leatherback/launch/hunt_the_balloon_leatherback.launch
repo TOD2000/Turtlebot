@@ -1,0 +1,9 @@
+<launch>
+
+	<node pkg="balloon_detection_leatherback" type="chase_the_balloon_leatherback.py" name="chase_the_balloon_leatherback" output="screen"> 
+	</node>
+
+	<node pkg="balloon_detection_leatherback" type="find_balloon_leatherback.py" name="find_balloon_leatherback" output="screen">
+	</node>
+
+</launch>
