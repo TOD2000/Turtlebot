@@ -1,0 +1,10 @@
+<launch>
+
+	<node pkg="balloon_detection" type="chase_the_balloon.py" name="chase_the_balloon" output="screen"> 
+	</node>
+
+	<node pkg="balloon_detection" type="find_balloon.py" name="find_balloon" output="screen">
+	</node>
+
+</launch>
+
