@@ -1,5 +1,5 @@
 # Turtlebot
-#Group_Turtlebot_Project. Files used to spin a turtlebot, detect a balloon then drive towards the balloon and pop it then slowly spin looking for new balloons. The code is based on code from https://github.com/tizianofiorenzani/ros_tutorials and the official turtlebot code. The work is for a university project to create a fun and engaging set of activites for childrenusing turtlebots. 
+#Group_Turtlebot_Project. Files used to spin a turtlebot, detect a balloon then drive towards the balloon and pop it then slowly spin looking for new balloons. The code is based on code from https://github.com/tizianofiorenzani/ros_tutorials and the official turtlebot code. The work is for a university project to create a fun and engaging set of activites for childrenusing turtlebots. It is entirely non commercial.
 
 teleop_team_tb is using the turtlebot teleop code but adds an addition to subscribe to the scan topic to determine distance in front of the robot and slow it down if there is an obstacle ahead.
 
