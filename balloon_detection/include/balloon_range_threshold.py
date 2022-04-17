@@ -16,7 +16,7 @@ import time
 
 bashCommand1 = "rm -rf ./frame*"
 bashCommand2 = "echo \"*****************RIGHT click on the image to save current image then wait. Press Q to quit***********\""
-bashCommand3 = "timeout 10s rosrun image_view image_view image:=/loggerhead/raspicam_node/image&"
+bashCommand3 = "timeout 6s rosrun image_view image_view image:='raspicam_node/image'&"
 os.system(bashCommand1)
 os.system(bashCommand2)
 os.system(bashCommand3)
