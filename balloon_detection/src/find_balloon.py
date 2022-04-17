@@ -176,7 +176,7 @@ def main(args):
     params.filterByInertia = True
     params.minInertiaRatio = 0.2
 
-    ic = BalloonDetector(blue_min, blue_max, blur, params, detection_window)
+    ic = BalloonDetector(HSV_min, HSV_max, blur, params, detection_window)
     rospy.init_node('balloon_detector', anonymous=True)
 
 
