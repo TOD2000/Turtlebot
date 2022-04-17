@@ -40,7 +40,7 @@ else:
   import tty, termios
 
 ####TEAM TURTLEBOT ADDITION ######
-bashCommand = "rqt_image_view image:='raspicam_node/image/compressed' &"
+bashCommand = "rqt_image_view image:='raspicam_node/image' image_transport:=compressed &"
 os.system(bashCommand)
   
 
