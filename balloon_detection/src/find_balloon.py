@@ -137,6 +137,7 @@ class BalloonDetector:
             fps = 1.0/(time.time()-self._t0)
             self._t0 = time.time()
 
+            
 def main(args):
     HSV_min = (150,147,150)
     HSV_max = (186,255,255)
