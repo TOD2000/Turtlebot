@@ -257,7 +257,7 @@ if __name__ == "__main__":
 
     for image in image_list:
         # -- Detect keypoints
-        keypoints, _ = balloon_detect(image, blue_min, blue_max, blur=5,
+        keypoints, _ = balloon_detect(image, HSV_min, HSV_max, blur=5,
                                    balloon_params=None, search_window=window, imshow=True)
 
         image = blur_outside(image, blur=15, window_adim=window)
