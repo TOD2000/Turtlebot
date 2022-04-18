@@ -241,8 +241,8 @@ def get_blob_relative_position(image, keyPoint):
 if __name__ == "__main__":
 
     # --- Define HSV limits 
-    balloon_min = (82, 140, 175)
-    balloon_max = (106, 255, 255)
+    HSV_min = (82, 140, 175)
+    HSV_max = (106, 255, 255)
     # --- Define area limit [x_min, y_min, x_max, y_max] adimensional (0.0 to 1.0) starting from top left corner
     # window = [0.25, 0.25, 0.65, 0.75]
     window = [0.2, 0.2, 0.8, 0.8]
@@ -256,7 +256,7 @@ if __name__ == "__main__":
 
     for image in image_list:
         # -- Detect keypoints
-        keypoints, _ = balloon_detect(image, balloon_min, balloon_max, blur=5,
+        keypoints, _ = balloon_detect(image, HSV_min, HSV_max, blur=5,
                                    balloon_params=None, search_window=window, imshow=True)
 
         image = blur_outside(image, blur=15, window_adim=window)
